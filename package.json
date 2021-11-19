@@ -1,0 +1,17 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "2021.12.0",
+  "description": "My attempt at the advent of code for 2021.",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --watchAll"
+  },
+  "author": "Guy Royse <guy@guyroyse.com> (http://guyroyse.com/)",
+  "engines": {
+    "node": ">=16"
+  },
+  "private": true,
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
