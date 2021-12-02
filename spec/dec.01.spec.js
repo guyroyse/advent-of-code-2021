@@ -1,4 +1,4 @@
-import { countDepthIncreases, countDepthIncreasesSliding } from '../lib/advent.js'
+import { countDepthIncreases, countDepthIncreasesSliding } from '../lib/dec-01.js'
 
 describe("December 1 - Part 1", () => {
 
@@ -35,7 +35,7 @@ describe("December 1 - Part 1", () => {
   })
 
   it("computes the answer", async () => {
-    let input = await fetchInput('2021-12-01.txt')
+    let input = await fetchInput('dec.01.txt')
     let output = countDepthIncreases(input)
     expect(output).toBe(1482)
   })
@@ -72,7 +72,7 @@ describe("December 1 - Part 2", () => {
   })
 
   it("computes the answer", async () => {
-    let input = await fetchInput('2021-12-01.txt')
+    let input = await fetchInput('dec.01.txt')
     let output = countDepthIncreasesSliding(input)
     expect(output).toBe(1518)
   })
