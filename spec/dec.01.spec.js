@@ -1,4 +1,4 @@
-import { countDepthIncreases, countDepthIncreasesSliding } from '../lib/dec-01.js'
+import { countDepthIncreases, countDepthIncreasesSliding } from '../lib/dec.01.js'
 
 describe("December 1 - Part 1", () => {
 
