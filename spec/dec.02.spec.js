@@ -59,7 +59,7 @@ describe("December 2 - Part 1", () => {
   })
 })
 
-describe("December 2 - Part 1", () => {
+describe("December 2 - Part 2", () => {
 
   it("returns depth and horizontal position of 0 for no inputs", () => {
     let position = calculatePositionCorrectly("")
