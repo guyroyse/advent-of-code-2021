@@ -4,7 +4,7 @@
   "description": "My attempt at the advent of code for 2021.",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --watchAll"
+    "test": "node --experimental-vm-modules --no-warnings ./node_modules/.bin/jest --watchAll"
   },
   "author": "Guy Royse <guy@guyroyse.com> (http://guyroyse.com/)",
   "engines": {
