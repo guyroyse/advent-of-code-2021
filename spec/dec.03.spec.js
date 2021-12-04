@@ -1,7 +1,7 @@
 import { calculatePowerConsumption, calculateLifeSupportRating } from '../lib/dec.03.js'
 
 describe("December 3", () => {
-  describe("Part 2", () => {
+  describe("Part 1", () => {
     it("computes expected values for all 1s", () => {
       let result = calculatePowerConsumption("111111111111")
       expect(result.gamma).toBe(4095)
