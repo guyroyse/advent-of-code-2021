@@ -1,4 +1,4 @@
-import { Space, Board, Game, scoreGame } from "../lib/dec.04"
+import { Space, Board, Game, scoreGameToWin, scoreGameToLose } from "../lib/dec.04"
 
 const ROLLS = [
   7, 4, 9, 5, 11, 17, 23, 2, 0, 14, 21, 24, 10, 16,
@@ -126,8 +126,8 @@ describe("December 4", () => {
   describe("Game", () => {
     let game
     beforeEach(() => game = new Game(BOARDS, ROLLS))
-    describe("when played", () => {
-      beforeEach(() => game.play())
+    describe("when playing to win", () => {
+      beforeEach(() => game.playToWin())
 
       it("returns the unmarked sum of the winner", () => {
         expect(game.unmarkedSum).toBe(188)
@@ -141,13 +141,37 @@ describe("December 4", () => {
         expect(game.winningScore).toBe(4512)
       })
     })
+
+    describe("when playing to lose", () => {
+      beforeEach(() => game.playToLose())
+
+      it("returns the unmarked sum of the last winner", () => {
+        expect(game.unmarkedSum).toBe(148)
+      })
+ 
+      it("returns the last winning roll", () => {
+        expect(game.winningRoll).toBe(13)
+      })
+
+      it("returns the last winning score", () => {
+        expect(game.winningScore).toBe(1924)
+      })
+    })
   })
 
   describe("Part 1", () => {
     it("computes the answer", async () => {
       let input = await fetchInput('dec.04.txt')
-      let score = scoreGame(input)
+      let score = scoreGameToWin(input)
       expect(score).toBe(51034)
+    })
+  })
+
+  describe("Part 2", () => {
+    it("computes the answer", async () => {
+      let input = await fetchInput('dec.04.txt')
+      let score = scoreGameToLose(input)
+      expect(score).toBe(5434)
     })
   })
 })
