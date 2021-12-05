@@ -67,7 +67,7 @@ describe("December 5", () => {
         map.drawLine("0,0 -> 8,8")
         map.drawLine("5,5 -> 8,2")
       })
-      fit("creates map with the expected intersections", () => expect(map.intersectionCount).toBe(5))
+      it("creates map with the expected intersections", () => expect(map.intersectionCount).toBe(5))
     })
   })
 
