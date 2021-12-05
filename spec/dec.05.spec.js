@@ -69,6 +69,22 @@ describe("December 5", () => {
       })
       it("creates map with the expected intersections", () => expect(map.intersectionCount).toBe(5))
     })
+
+    describe("drawing lots of lines diagonally", () => {
+      beforeEach(() => {
+        map.drawLineWithDiagonals("0,9 -> 5,9")
+        map.drawLineWithDiagonals("8,0 -> 0,8")
+        map.drawLineWithDiagonals("9,4 -> 3,4")
+        map.drawLineWithDiagonals("2,2 -> 2,1")
+        map.drawLineWithDiagonals("7,0 -> 7,4")
+        map.drawLineWithDiagonals("6,4 -> 2,0")
+        map.drawLineWithDiagonals("0,9 -> 2,9")
+        map.drawLineWithDiagonals("3,4 -> 1,4")
+        map.drawLineWithDiagonals("0,0 -> 8,8")
+        map.drawLineWithDiagonals("5,5 -> 8,2")
+      })
+      it("creates map with the expected intersections", () => expect(map.intersectionCount).toBe(12))
+    })
   })
 
   describe("Part 1", () => {
@@ -78,8 +94,20 @@ describe("December 5", () => {
       let lines = input.split('\n')
       lines.forEach(line => map.drawLine(line))
       console.log(map._data.length)
-      expect(map.lineCount).toBe(86612)
-      expect(map.intersectionCount).toBe(4639)
+      expect(map.lineCount).toBe(92916)
+      expect(map.intersectionCount).toBe(6189)
+    })
+  })
+
+  describe("Part 2", () => {
+    it("computes the answer", async () => {
+      let input = await fetchInput('dec.05.txt')
+      let map = new VentMap()
+      let lines = input.split('\n')
+      lines.forEach(line => map.drawLineWithDiagonals(line))
+      console.log(map._data.length)
+      expect(map.lineCount).toBe(147927)
+      expect(map.intersectionCount).toBe(19164)
     })
   })
 })
