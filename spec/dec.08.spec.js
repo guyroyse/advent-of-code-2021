@@ -58,10 +58,10 @@ describe("December 8", () => {
       0b0111111, 0b1111110, 0b0110011, 0b1011111, 0b0000011 ])
   })
 
-  it("converts the bits to their secret numbers", () => {
-    let numbers = convertToNumbers([ 0b1111111, 0b0111110, 0b1101101, 0b0101111, 0b0001011,
-      0b0111111, 0b1111110, 0b0110011, 0b1011111, 0b0000011 ])
-    expect(numbers).toEqual([ 8, 0, 0, 0, 7, 0, 0, 4, 0, 1 ])
+  it("convert letters to numbers", () => {
+    let bits = convertToNumbers([ "acedgfb", "cdfbe", "gcdfa", "fbcad", "dab",
+      "cefabd", "cdfgeb", "eafb", "cagedb", "ab" ])
+    expect(bits).toEqual([ 8, 5, 2, 3, 7, 9, 6, 4, 0, 1 ])
   })
 
   describe("Part 1", () => {
