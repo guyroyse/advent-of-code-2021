@@ -56,7 +56,7 @@ describe("December 12", () => {
   describe("Part 1", () => {
     it("computes the sample answer #1", async () => {
       await loadGraph(SAMPLE_INPUT_1)
-      let results = await queryGraph('MATCH p = (:start)-[:LEADS_TO*]->(:end) RETURN nodes(p), relationships(p)')
+      let results = await queryGraph('MATCH p = (:start)-[*]->(:end) RETURN [ n IN nodes(p) | labels(n)[0] ]')
       expect(results).toBe(false)
       let paths = await numberOfPaths()
       expect(paths).toBe(10)
