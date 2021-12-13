@@ -1,4 +1,4 @@
-import { computeGenerations, findSyncedGeneration } from "../lib/dec.11"
+import { computeGenerations, findSyncedGeneration } from "../../lib/dec.11"
 
 const SAMPLE_INPUT = [
   [ 5, 4, 8, 3, 1, 4, 3, 2, 2, 3 ],

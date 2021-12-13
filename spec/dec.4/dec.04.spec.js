@@ -1,4 +1,4 @@
-import { Space, Board, Game, scoreGameToWin, scoreGameToLose } from "../lib/dec.04"
+import { Space, Board, Game, scoreGameToWin, scoreGameToLose } from "../../lib/dec.04"
 
 const ROLLS = [
   7, 4, 9, 5, 11, 17, 23, 2, 0, 14, 21, 24, 10, 16,

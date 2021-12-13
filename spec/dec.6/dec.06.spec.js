@@ -1,4 +1,4 @@
-import { computePopulation, parseInput } from "../lib/dec.06"
+import { computePopulation, parseInput } from "../../lib/dec.06"
 
 describe("December 6", () => {
 

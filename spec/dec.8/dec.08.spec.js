@@ -1,5 +1,5 @@
 import { computePart1, parseInput, parseLine, countSegments,
-  countKnownNumbers, countAllKnownNumbers, convertToBits, convertToNumbers } from "../lib/dec.08"
+  countKnownNumbers, countAllKnownNumbers, convertToBits, convertToNumbers } from "../../lib/dec.08"
 
 const PART_1_SAMPLE =`
 be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe

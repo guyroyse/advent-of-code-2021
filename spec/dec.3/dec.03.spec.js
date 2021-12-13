@@ -1,4 +1,4 @@
-import { calculatePowerConsumption, calculateLifeSupportRating } from '../lib/dec.03.js'
+import { calculatePowerConsumption, calculateLifeSupportRating } from '../../lib/dec.03.js'
 
 describe("December 3", () => {
   describe("Part 1", () => {

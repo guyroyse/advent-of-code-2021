@@ -1,4 +1,4 @@
-import { calculatePosition, calculatePositionCorrectly } from '../lib/dec.02.js'
+import { calculatePosition, calculatePositionCorrectly } from '../../lib/dec.02.js'
 
 describe("December 2", () => {
   describe("Part 1", () => {

@@ -1,4 +1,4 @@
-import { corruptedPoints, incompletePoints } from "../lib/dec.10"
+import { corruptedPoints, incompletePoints } from "../../lib/dec.10"
 
 const SAMPLE_INPUT = `
 [({(<(())[]>[[{[]{<()<>>

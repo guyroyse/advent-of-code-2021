@@ -1,4 +1,4 @@
-import { computeLeastFuel, computeLeastFuelCorrectly } from "../lib/dec.07"
+import { computeLeastFuel, computeLeastFuelCorrectly } from "../../lib/dec.07"
 
 describe("December 7", () => {
 

@@ -1,4 +1,4 @@
-import { VentMap } from "../lib/dec.05"
+import { VentMap } from "../../lib/dec.05"
 
 describe("December 5", () => {
 

@@ -1,4 +1,4 @@
-import { loadGraph, numberOfPaths, writeToGraph, queryGraph, flushAll } from "../lib/dec.12"
+import { loadGraph, numberOfPaths, writeToGraph, queryGraph, flushAll } from "../../lib/dec.12"
 
 const SAMPLE_INPUT_1 = [ "start-A", "start-b", "A-c", "A-b", "b-d", "A-end", "b-end" ]
 const SAMPLE_INPUT_2 = []
